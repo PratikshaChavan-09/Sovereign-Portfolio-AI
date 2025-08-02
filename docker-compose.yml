@@ -1,0 +1,23 @@
+services:
+  portfolio-manager:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONPATH=/app:/app/backend:/app/frontend
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    command: >
+      sh -c "
+      echo 'Installing Gemini at runtime...' &&
+      pip install --force-reinstall google-generativeai==0.8.4 &&
+      python -c 'import google.generativeai; print(\"✅ Gemini ready\")' &&
+      streamlit run frontend/app.py --server.port=8501 --server.address=0.0.0.0
+      "
+    restart: unless-stopped
+
+volumes:
+  pip-cache:

@@ -1,0 +1,15 @@
+# Core Data Processing
+pandas==2.2.2
+numpy==1.26.4
+openpyxl==3.1.5
+
+# Streamlit Frontend
+streamlit==1.38.0
+plotly==5.24.1
+
+# AI/ML Dependencies
+google-generativeai==0.8.4
+faiss-cpu==1.9.0
+
+# Utilities
+python-dotenv==1.0.1
