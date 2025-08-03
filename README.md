@@ -115,7 +115,13 @@ portfolio-manager/
 - Docker (optional)
 - Google Gemini API Key
 
+### Code Setup
 
+1. **Clone the repository**
+```bash
+git clone https://github.com/PratikshaChavan-09/Sovereign-Portfolio-AI.git
+cd Sovereign-Portfolio-AI
+```
 
 ## 🏃‍♂️ Running the Application
 
@@ -300,4 +306,5 @@ This project implements portfolio management concepts from:
   - Modern portfolio theory implementation
   - Risk measurement and management
   - Performance evaluation standards
+
 
