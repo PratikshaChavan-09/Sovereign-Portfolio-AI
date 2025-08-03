@@ -113,7 +113,6 @@ portfolio-manager/
 ### Prerequisites
 - Python 3.12+
 - Docker (optional)
-- Google Gemini API Key
 
 ### Code Setup
 
@@ -306,5 +305,6 @@ This project implements portfolio management concepts from:
   - Modern portfolio theory implementation
   - Risk measurement and management
   - Performance evaluation standards
+
 
 
